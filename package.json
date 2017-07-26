@@ -1,0 +1,8 @@
+{
+    "name": "X-Woerter",
+    "version": "1.0.0",
+    "description": "X-Woerter on Heroku",
+    "dependencies": {
+        "harp": "*"
+    }
+}
