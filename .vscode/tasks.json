@@ -1,0 +1,38 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "echoCommand": true,
+    "tasks": [
+        {
+            "taskName": "mvn-clean",
+            "type": "shell",
+            "command": "mvn",
+            "args": [
+                "-B",
+                "verify"
+            ],
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "taskName": "mvn-install",
+            "type": "shell",
+            "command": "mvn",
+            "args": [
+                "install"
+            ],
+            "group": "build"
+        },
+        {
+            "taskName": "run-app",
+            "type": "shell",
+            "command": "java",
+            "args": [
+                "-jar",
+                "target/x-woerter-0.0.1-SNAPSHOT.jar"
+            ],
+            "group": "build"
+        }
+    ]
+}
